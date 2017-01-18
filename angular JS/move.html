@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html dir= "ltr" lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<head>
+<meta charset="UTF-8" />
+<title>MOVIE BOOKINGS</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link href="css/960.css" rel="Stylesheet" />
+<link href="css/reset.css" rel="Stylesheet" />
+<link href="css/text.css" rel="Stylesheet" />
+</head>
+<body>
+
+<body ng-app="">
+<h1>MOVIE BOOKINGS</h1>
+
+
+<div class="container_12">
+
+
+
+
+<div class="grid_6">
+
+ 	<form>
+  Select a City
+  <select ng-model="myVar">
+    <option value="Mumbai">Mumbai
+    <option value="Delhi">Delhi
+    <option value="Bengaluru">Bengaluru
+    <option value="Chandigarh">Chandigarh
+   
+
+    
+
+  </select>
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="Mumbai">
+     <h3>Mumbai</h3>
+     <p>Following theaters available:.</p>
+     <ul>
+  	<input type="radio" ng-model="myVar" value="navi mumbai">Navi Mumbai
+  	<input type="radio" ng-model="myVar" value="bandra west">Bandra West
+  	<input type="radio" ng-model="myVar" value="bandra East">Bandra East
+  </ul>
+  </div>
+
+
+  <div ng-switch="myVar">
+  <div ng-switch-when="Delhi">
+     <h3>Delhi</h3>
+     <p>Following theaters available:.</p>
+     <ul>
+  	<input type="radio" ng-model="myVar" value="Karol Bagh">Karol Bagh
+  	<input type="radio" ng-model="myVar" value="Saket">Saket
+  	<input type="radio" ng-model="myVar" value="Cannught place">Cannught place
+  </ul>
+  </div>
+
+  <div ng-switch="myVar">
+  <div ng-switch-when="Bengaluru">
+     <h3>Bengaluru</h3>
+     <p>Following theaters available:.</p>
+     <ul>
+  	<input type="radio" ng-model="myVar" value="pvr">PVR
+  	<input type="radio" ng-model="myVar" value="fr">FR
+  	<input type="radio" ng-model="myVar" value="wave cinemas">WAVE CINEMAS
+  </ul>
+  </div>
+
+
+  <div ng-switch="myVar">
+  <div ng-switch-when="Chandigarh">
+     <h3>Chandigarh</h3>
+     <p>Following theaters available:.</p>
+     <ul>
+  	<input type="radio" ng-model="myVar" value="pvr cinemas">PVR Cinemas
+  	<input type="radio" ng-model="myVar" value="dt Cinemas">DT Cinemas
+  	<input type="radio" ng-model="myVar" value="north country mall">North Country Mall
+  </ul>
+  </div>
+  	</div>
+  	<br>
+  	<br>
+<br>
+
+<div class="grid_6">
+<h1>Movie Type</h1>
+<form>
+  Pick a genre:
+  <input type="radio" ng-model="myVar" value="comedy">Comedy
+  <input type="radio" ng-model="myVar" value="action">Action
+  <input type="radio" ng-model="myVar" value="romance">Romance
+  <input type="radio" ng-model="myVar" value="documentry">Documentry
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="comedy">
+     <h1>Comedy</h1>
+     <p>Welcome to a world of comedy.</p>
+     <ul>
+     	Dumb and Dumber<br>
+     	Angry Birds<br>
+     	The Awkward Moment<br>
+
+     </ul>
+  </div>
+  <div ng-switch-when="action">
+     <h1>Action</h1>
+     <p>Check out Action movies</p>
+     <ul>
+     	Warrior<br>	
+     	Expandables<br>
+     	Mission Impossible<br>	
+     </ul>
+  </div>
+  <div ng-switch-when="romance">
+     <h1>Romance</h1>
+     <p>Check out romance.</p>
+     <ul>
+     	Faults in Our Stars<br>
+     	Me and You<br>
+     	The Intern<br>
+     </ul>
+  </div>
+
+  <div ng-switch-when="documentry">
+     <h1>Documentry</h1>
+     <p>Check out Documentries</p>
+     <ul>
+     	Theory Of Eveything<br>
+     	Everest<br>
+     	Before the Flood<br>	
+     </ul>
+  </div>
+</div>
+
+</div>	
+  
+</div>
+
+
+
+</body>
+</html>
